@@ -1,0 +1,116 @@
+/* PAGES CULTURELLES */
+
+.culture-hero {
+    min-height: 48vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.culture-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(11, 61, 46, 0.50));
+}
+
+.culture-hero-content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.culture-hero-content span {
+    color: #f2b705;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.culture-hero-content h1 {
+    margin: 12px 0 15px;
+    font-size: 3.4rem;
+    line-height: 1.1;
+}
+
+.culture-hero-content p {
+    max-width: 760px;
+    font-size: 1.1rem;
+}
+
+.culture-section {
+    padding: 70px 0;
+    background-color: #fffaf2;
+}
+
+.culture-card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.culture-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.culture-card .card-body {
+    padding: 22px;
+}
+
+.culture-card h3 {
+    color: #0b3d2e;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.culture-card p {
+    color: #555;
+    margin-bottom: 0;
+}
+
+.culture-actions {
+    padding: 55px 20px;
+    text-align: center;
+    color: white;
+    background-color: #0b3d2e;
+}
+
+.culture-actions p {
+    max-width: 720px;
+    margin: 0 auto 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .culture-hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .culture-hero {
+        min-height: 42vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .culture-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .culture-card img {
+        height: 190px;
+    }
+}

@@ -1,0 +1,158 @@
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(11, 61, 46, 0.40)),
+        url("../images/Masques du Benin/Vodoun chinan.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #f2b705;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* SECTION VOIR */
+
+.culture-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) /**!important**/;
+}
+
+.culture-card .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.culture-card .card-body {
+    padding: 22px;
+}
+
+.culture-card .card-title {
+    color: #0b3d2e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.culture-card .card-text {
+    color: #555;
+}
+
+/* SECTION ALLEZ PLUS LOIN */
+
+.more-section {
+    width: 100%;
+    max-width: none;
+    background-color: #0b3d2e;
+    color: white;
+    text-align: center;
+}
+
+.more-content {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.more-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.more-content p {
+    margin-bottom: 25px;
+}
+
+/* SECTION AVIS */
+
+.avis-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.avis-card {
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #f2b705;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.avis-card p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.avis-card h4 {
+    color: #0b3d2e;
+}
+
+/* RESPONSIVE ACCUEIL */
+
+@media screen and (max-width: 900px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .cards,
+    .avis-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards,
+    .avis-list {
+        grid-template-columns: 1fr;
+    }
+}

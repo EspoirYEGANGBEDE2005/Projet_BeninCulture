@@ -1,0 +1,112 @@
+/* PAGE DETAILS */
+
+.details-hero {
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.38), rgba(11, 61, 46, 0.82)),
+        url("../images/Les sites touristiques/Illustration-Ganvié.jpg") center/cover no-repeat;
+}
+
+.details-hero-content {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.details-hero-content span {
+    color: #f2b705;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.details-hero-content h1 {
+    margin-top: 12px;
+    font-size: 3.3rem;
+    line-height: 1.1;
+}
+
+.details-section {
+    padding: 70px 0;
+    background-color: #fffaf2;
+}
+
+.details-layout {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.details-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.details-image img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.details-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.details-content h2 {
+    color: #0b3d2e;
+    margin-bottom: 15px;
+}
+
+.details-content p {
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.details-list {
+    margin: 20px 0 25px;
+    padding-left: 20px;
+    color: #444;
+}
+
+.details-list li {
+    margin-bottom: 8px;
+}
+
+.details-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 850px) {
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .details-hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .details-image img {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .details-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .details-content {
+        padding: 22px;
+    }
+}

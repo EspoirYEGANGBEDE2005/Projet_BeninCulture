@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "Poppins", Arial, sans-serif;
+    background-color: #fffaf2;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #0b3d2e;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f2b705;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f2b705;
+}
+
+/* MENU DEROULANT */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 230px;
+    background-color: white;
+    color: #222;
+    list-style: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 15px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f6ead2;
+    color: #0b3d2e;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* BOUTONS */
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #f2b705;
+    color: #1f1f1f;
+}
+
+.btn-primary:hover {
+    background-color: #d99b00;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #0b3d2e;
+}
+
+/* SECTIONS COMMUNES */
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #082f23;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE COMMUN */
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown-menu {
+        position: static;
+        margin-top: 10px;
+    }
+}

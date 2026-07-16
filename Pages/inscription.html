@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - BeninCulture</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/inscription.css">
+</head>
+<body>  
+
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">BeninCulture</a>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+
+            <li class="dropdown">
+                <a href="decouvrir.html">Découvrez</a>
+                <ul class="dropdown-menu">
+                    <li><a href="vodouns.html">Vodouns du Bénin</a></li>
+                    <li><a href="royaumes.html">Royaumes du Bénin</a></li>
+                    <li><a href="villes.html">Villes particulières</a></li>
+                    <li><a href="sites.html">Sites touristiques</a></li>
+                    <li><a href="musees.html">Musées du Bénin</a></li>
+                    <li><a href="danses.html">Danses traditionnelles</a></li>
+                    <li><a href="masques.html">Masques du Bénin</a></li>
+                </ul>
+            </li>
+
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="inscription-section">
+        <div class="inscription-container">
+            <h1>Créer un compte</h1>
+            <p>
+                Inscrivez-vous pour accéder aux contenus culturels,
+                laisser votre avis et prendre rendez-vous avec un guide touristique.
+            </p>
+
+            <form id="formInscription">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+                    <small class="error-message" id="errorNom"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+                    <small class="error-message" id="errorPrenom"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com">
+                    <small class="error-message" id="errorEmail"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="pays">Pays / Nationalité</label>
+                    <input type="text" id="pays" name="pays" placeholder="Ex : Bénin">
+                    <small class="error-message" id="errorPays"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="motdepasse">Mot de passe</label>
+                    <input type="password" id="motdepasse" name="motdepasse" placeholder="Créez un mot de passe">
+                    <small class="error-message" id="errorMotdepasse"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="avis">Votre avis sur le site</label>
+                    <textarea id="avis" name="avis" placeholder="Partagez votre avis sur BeninCulture"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-btn">S’inscrire</button>
+
+                <p id="successMessage" class="success-message"></p>
+            </form>
+
+            <p class="form-link">
+                Vous avez déjà un compte ?
+                <a href="connexion.html">Connectez-vous</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 BeninCulture - Tous droits réservés.</p>
+</footer>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

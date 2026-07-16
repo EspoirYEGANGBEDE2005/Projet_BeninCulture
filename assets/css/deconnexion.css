@@ -1,0 +1,80 @@
+.deconnexion-section {
+    min-height: calc(100vh - 120px);
+    padding: 90px 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+        url("../images/Vodouns/fetiches-gambada.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.deconnexion-box {
+    max-width: 560px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 35px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.deconnexion-box h1 {
+    color: #0b3d2e;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.deconnexion-box p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.deconnexion-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.deconnexion-actions button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-outline {
+    border: 2px solid #0b3d2e;
+    color: #0b3d2e;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #0b3d2e;
+    color: white;
+}
+
+.deconnexion-message {
+    margin-top: 20px;
+    color: #0b7a3b;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .deconnexion-section {
+        padding: 60px 15px;
+    }
+
+    .deconnexion-box {
+        padding: 25px 20px;
+    }
+
+    .deconnexion-actions {
+        flex-direction: column;
+    }
+
+    .deconnexion-actions .btn,
+    .deconnexion-actions button {
+        width: 100%;
+    }
+}

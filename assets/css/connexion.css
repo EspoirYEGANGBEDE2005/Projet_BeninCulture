@@ -1,0 +1,100 @@
+.connexion-section {
+    min-height: calc(100vh - 120px);
+    padding: 80px 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
+        url("../images/Rythmes et danses culturelles ou traditionnelles/Danse_traditionnel_Zinli_au_Bénin.jpg") center/cover no-repeat;
+}
+
+.connexion-container {
+    max-width: 520px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.connexion-container h1 {
+    text-align: center;
+    color: #0b3d2e;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.connexion-container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #0b3d2e;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0b3d2e;
+    box-shadow: 0 0 0 2px rgba(11, 61, 46, 0.12);
+}
+
+.form-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.error-message {
+    display: block;
+    color: #c0392b;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.success-message {
+    color: #0b7a3b;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.form-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.form-link a {
+    color: #0b3d2e;
+    font-weight: bold;
+}
+
+.form-link a:hover {
+    color: #f2b705;
+}
+
+@media screen and (max-width: 600px) {
+    .connexion-section {
+        padding: 50px 15px;
+    }
+
+    .connexion-container {
+        padding: 25px 20px;
+    }
+}
